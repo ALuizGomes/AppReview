@@ -1,23 +1,15 @@
-import { Container, Header, UserInfo, Photo, User, UserName, UserGreetings, UserWrapper, Icon } from "./styles";
-
-import { HighlighCard } from "../../components/HighlightCard/Index";
+import { Avaliacao, Container, TextAvaliativo } from "./styles";
+import { Header } from "../../components/Header";
+import { Grade } from "../../components/Grade";
 
 export function Dashboard() {
   return (
     <Container>
-      <Header>
-        <UserWrapper>
-        <Photo source={{uri: 'https://avatars.githubusercontent.com/u/90867219?v=4' }}/>
-          <UserInfo>
-            <User>
-              <UserGreetings>Ola, </UserGreetings>
-              <UserName>Andre Luiz Gomes!</UserName>
-            </User>
-          </UserInfo>
-          <Icon name="power"/>        
-        </UserWrapper>
-      </Header>
-      <HighlighCard />
+      <Header />
+      <Avaliacao>
+        <TextAvaliativo>DE 0 A 10, O QUNTO VOCE RECOMENDARIA A SI SHOES PARA UM AMIGO OU FAMILIAR?</TextAvaliativo>
+        <Grade />
+      </Avaliacao>
     </Container>
   )
 }

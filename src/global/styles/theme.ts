@@ -8,11 +8,11 @@ export default {
 
     attention: '#E83F5B',
 
-    shape: '#FFFFFF',
+    header: '#FFFFFF',
     title: '#880808',
     text: '#969CB2',
     name: '#FF6D0A',
-    background: '#F0F2F5',
+    background: '#000',
     number: '#EE4B2B',
   },
 
